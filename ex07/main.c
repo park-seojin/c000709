@@ -5,14 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: seojpark <qkrtjwls8546@naver.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/08 14:06:13 by seojpark          #+#    #+#             */
-/*   Updated: 2020/07/09 10:11:33 by seojpark         ###   ########.fr       */
+/*   Created: 2020/07/09 09:05:44 by seojpark          #+#    #+#             */
+/*   Updated: 2020/07/09 09:07:40 by seojpark         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_comb(void);
+void	ft_putnbr(int nb);
 
-int main(void)
+int	main(void)
 {
-	ft_print_comb();
+	ft_putnbr(42);
+	return (0);
 }

@@ -1,18 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: seojpark <qkrtjwls8546@naver.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/08 14:06:13 by seojpark          #+#    #+#             */
-/*   Updated: 2020/07/09 10:11:33 by seojpark         ###   ########.fr       */
+/*   Created: 2020/07/09 08:56:06 by seojpark          #+#    #+#             */
+/*   Updated: 2020/07/09 22:11:09 by seojpark         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_comb(void);
+#include <unistd.h>
 
-int main(void)
+int	check_neg(int *nb)
 {
-	ft_print_comb();
+	int min;
+
+	min = -2147483648;
+	if (!(*nb))
+	{
+		write(1, "0", 1);
+		return (1);
+	}
+	if (*nb < 0)
+	{
+		write(1, "-", 1);
+		if(*nb == min)
+		{
+		write(1, "2147483648", 10);
+		return (1);
+		}
+	*nb *= -1;
+	}
+	return (0);
 }
+
+
